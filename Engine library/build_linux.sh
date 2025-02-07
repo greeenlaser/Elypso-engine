@@ -35,7 +35,8 @@ if ! command -v g++ &> /dev/null; then
 fi
 
 function copy_to_game_template() {
-   if [ -d "$sourcePath/../Game/" ]; then
+   if [ -d "$sourcePath/../Game/" ] 
+   then
       cp "$buildPath/libElypso engine.a" "$sourcePath/../Game/"
    fi
 }
